@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Abdullah Waseem Riaz – Oracle Developer building database applications, reports and textile ERP solutions.">
+<title>Abdullah Waseem Riaz | Oracle Developer & ERP Specialist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070c18;--bg2:#0b1424;--surface:#101c30;--ink:#f2f6ff;--muted:#a5b3c8;--blue:#72aaff;--mint:#71e0cb;--line:rgba(180,205,240,.15);--onacc:#06101c;--glass:rgba(16,28,48,.62);color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f6fc;--bg2:#e8eef9;--surface:#fff;--ink:#0e1a30;--muted:#4a5a75;--blue:#2b63c9;--mint:#0c8f7a;--line:rgba(30,60,110,.16);--glass:rgba(255,255,255,.75);color-scheme:light}}
+:root[data-theme="light"]{--bg:#f3f6fc;--bg2:#e8eef9;--surface:#fff;--ink:#0e1a30;--muted:#4a5a75;--blue:#2b63c9;--mint:#0c8f7a;--line:rgba(30,60,110,.16);--glass:rgba(255,255,255,.75);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:-20%;z-index:-1;background:radial-gradient(40% 35% at 80% 10%,color-mix(in srgb,var(--blue) 26%,transparent),transparent),radial-gradient(35% 30% at 10% 55%,color-mix(in srgb,var(--mint) 16%,transparent),transparent);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(-4%,3%) scale(1.08)}}
+h1,h2,h3{font-family:Manrope,"DM Sans",sans-serif;margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:30;background:var(--glass);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font:800 1.2rem Manrope;letter-spacing:-.03em}.brand b{color:var(--mint)}
+.links{display:flex;gap:26px;align-items:center;color:var(--muted);font-size:.93rem}.links a:hover{color:var(--mint)}
+.links .hire{color:var(--onacc);background:linear-gradient(110deg,var(--blue),var(--mint));padding:9px 18px;border-radius:999px;font-weight:700}.links .hire:hover{color:var(--onacc)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center;padding:90px 0 80px;min-height:640px}
+.pill{display:inline-flex;gap:10px;align-items:center;padding:8px 15px;border:1px solid color-mix(in srgb,var(--mint) 40%,transparent);border-radius:999px;font-size:.85rem;font-weight:700;color:var(--mint);background:color-mix(in srgb,var(--mint) 9%,transparent)}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 var(--mint);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 10px transparent}}
+h1{font-size:clamp(2.8rem,6.4vw,5.2rem);line-height:1.02;letter-spacing:-.05em;margin:26px 0 22px;font-weight:800}
+h1 span{background:linear-gradient(100deg,var(--blue),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;color:var(--muted);max-width:60ch;margin:0}.lead strong{color:var(--ink)}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn{display:inline-flex;gap:8px;align-items:center;padding:13px 24px;border-radius:12px;font-weight:700;font-size:.95rem;border:1px solid var(--line);background:var(--glass);transition:transform .2s,border-color .2s}
+.btn:hover{transform:translateY(-3px);border-color:var(--mint)}
+.btn.pri{background:linear-gradient(110deg,var(--blue),var(--mint));color:var(--onacc);border:0;box-shadow:0 12px 30px -8px color-mix(in srgb,var(--mint) 55%,transparent)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px;max-width:640px}
+.stat{border-left:2px solid var(--mint);padding-left:14px}.stat strong{display:block;font:800 1.3rem Manrope}.stat span{font-size:.85rem;color:var(--muted)}
+.visual{position:relative;justify-self:center;width:min(360px,80vw);aspect-ratio:4/5}
+.frame{position:absolute;inset:0;border-radius:30px;padding:2px;background:conic-gradient(from var(--a,0deg),var(--blue),var(--mint),var(--blue));animation:spin 8s linear infinite}
+@property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
+@keyframes spin{to{--a:360deg}}
+.portrait{position:absolute;inset:2px;border-radius:28px;background:linear-gradient(155deg,color-mix(in srgb,var(--blue) 24%,var(--bg2)),var(--bg2));display:grid;place-items:center;text-align:center;overflow:hidden}
+.portrait::before,.portrait::after{content:"";position:absolute;border:1px solid var(--line);border-radius:50%;width:250px;height:250px;animation:pulse 5s ease-in-out infinite}
+.portrait::after{width:330px;height:330px;animation-delay:-2.5s}
+@keyframes pulse{50%{transform:scale(1.07);opacity:.5}}
+.mono{position:relative;width:128px;height:128px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;font:800 2.6rem Manrope;color:var(--mint);background:var(--glass);border:1px solid var(--line)}
+.portrait strong{position:relative;display:block;font:700 1.05rem Manrope}.portrait small{position:relative;color:var(--muted)}
+.chipf{position:absolute;z-index:2;padding:11px 15px;border-radius:14px;background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--line);font-size:.8rem;color:var(--muted);box-shadow:0 14px 34px -10px rgba(0,0,0,.45);animation:bob 5s ease-in-out infinite}
+.chipf b{display:block;color:var(--mint);font-size:.95rem}
+.c1{left:-46px;bottom:50px}.c2{right:-36px;top:48px;animation-delay:-2.5s}
+@keyframes bob{50%{transform:translateY(-9px)}}
+.marq{border-block:1px solid var(--line);background:var(--glass);overflow:hidden;padding:16px 0}
+.track{display:flex;gap:44px;width:max-content;animation:scroll 32s linear infinite}
+.track span{font:700 .95rem Manrope;color:var(--muted);white-space:nowrap}.track span::before{content:"◆";color:var(--mint);margin-right:44px;font-size:.6rem;vertical-align:middle}
+@keyframes scroll{to{transform:translateX(-50%)}}
+section{padding:96px 0}
+.eyebrow{font:700 .9rem Manrope;color:var(--mint)}
+h2{font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.1;letter-spacing:-.04em;margin:10px 0 14px;font-weight:800}
+.intro{color:var(--muted);max-width:62ch;margin:0 0 44px}
+.card{position:relative;padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--surface);overflow:hidden;transition:transform .25s,border-color .25s}
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--mint) 16%,transparent),transparent 70%)}
+.card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--mint) 55%,transparent)}.card:hover::after{opacity:1}
+.card h3{font-size:1.2rem;margin-bottom:10px;position:relative}.card p{margin:0;color:var(--muted);font-size:.97rem;position:relative}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.pr{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:relative}
+.pr div{padding:16px;border-radius:14px;background:var(--bg2);border:1px solid var(--line)}.pr b{display:block;font:700 .98rem Manrope;color:var(--mint)}.pr span{font-size:.85rem;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;position:relative}
+.chips span{font-size:.85rem;padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:var(--bg2)}
+.tl{position:relative;display:grid;gap:20px;padding-left:34px}
+.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--mint),var(--blue),transparent)}
+.job{display:grid;grid-template-columns:190px 1fr;gap:28px}
+.job::before{content:"";position:absolute;left:-34px;top:34px;width:16px;height:16px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 6px color-mix(in srgb,var(--mint) 22%,transparent)}
+.job .d{color:var(--mint);font-weight:700;font-size:.88rem}.job .co{color:var(--ink);margin:2px 0 10px;font-size:.95rem}
+.mods{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.num{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font:800 .95rem Manrope;color:var(--onacc);background:linear-gradient(135deg,var(--blue),var(--mint));margin-bottom:16px;position:relative}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:22px;position:relative}
+.flow>div{position:relative;padding:18px 16px;background:var(--bg2);border:1px solid var(--line);margin-right:18px;border-radius:14px}
+.flow>div:not(:last-child)::after{content:"→";position:absolute;right:-18px;top:50%;transform:translateY(-50%);width:18px;text-align:center;color:var(--mint);font-weight:700}
+.flow small{color:var(--mint);font-weight:700}.flow b{display:block;font:700 .95rem Manrope}.flow span{font-size:.82rem;color:var(--muted)}
+.app{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cta{padding:56px 40px;border-radius:28px;border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:32px;background:radial-gradient(500px 240px at 95% 0,color-mix(in srgb,var(--mint) 24%,transparent),transparent),linear-gradient(120deg,color-mix(in srgb,var(--blue) 18%,var(--surface)),var(--surface))}
+.cta p{color:var(--muted);margin:0 0 14px;max-width:56ch}.cta .em{font:800 1.15rem Manrope;color:var(--mint)}
+footer{padding:30px 0;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.js .rv.in{opacity:1;transform:none}
+@media(max-width:900px){.hero,.about{grid-template-columns:1fr}.hero{gap:56px;padding:64px 0}.visual{order:-1;width:260px}.c1{left:-24px}.c2{right:-24px}.skills,.mods,.app{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:6px}.flow{grid-template-columns:1fr 1fr;gap:14px}.flow>div{margin:0}.flow>div::after{display:none}.cta{flex-direction:column;align-items:flex-start}.links a:not(.hire){display:none}}
+@media(max-width:600px){.skills,.mods,.app{grid-template-columns:1fr}.stats{gap:8px}.stat strong{font-size:1.05rem}section{padding:68px 0}.cta{padding:32px 24px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home">ABDULLAH<b>.</b></a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#work">ERP work</a><a class="hire" href="#contact">Contact</a></div>
+</nav></div></header>
+
+<main>
+<div class="wrap hero" id="home">
+<div>
+<span class="pill"><i></i>Software Developer · Oracle &amp; ERP</span>
+<h1>Turning business processes into <span>smart solutions.</span></h1>
+<p class="lead">I’m <strong>Abdullah Waseem Riaz</strong>, an Oracle Developer building and supporting database-driven applications for the textile industry. I work with Oracle SQL, PL/SQL, Forms and Reports to support practical ERP workflows across business departments.</p>
+<div class="actions"><a class="btn pri" href="#work">Explore ERP experience ↘</a><a class="btn" href="https://www.linkedin.com/in/abdullah-waseem-riaz/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+<div class="stats"><div class="stat"><strong>Oracle</strong><span>Database &amp; development</span></div><div class="stat"><strong>Textile</strong><span>ERP domain experience</span></div><div class="stat"><strong>End-to-end</strong><span>Forms, logic &amp; reports</span></div></div>
+</div>
+<div class="visual">
+<div class="frame"></div>
+<div class="portrait"><div><div class="mono">AW</div><strong>Abdullah Waseem Riaz</strong><small>Oracle Developer · Textile ERP</small></div></div>
+<div class="chipf c1"><b>Forms 6i + 12c</b>Oracle Forms</div>
+<div class="chipf c2"><b>PL/SQL</b>Database logic</div>
+</div>
+</div>
+
+<div class="marq" aria-hidden="true"><div class="track">
+<span>Oracle Database 12c</span><span>SQL</span><span>PL/SQL</span><span>Oracle Forms</span><span>Oracle Reports</span><span>TOAD</span><span>Stored Procedures</span><span>Triggers</span><span>HRMS</span><span>Payroll</span><span>Inventory</span><span>Production</span>
+<span>Oracle Database 12c</span><span>SQL</span><span>PL/SQL</span><span>Oracle Forms</span><span>Oracle Reports</span><span>TOAD</span><span>Stored Procedures</span><span>Triggers</span><span>HRMS</span><span>Payroll</span><span>Inventory</span><span>Production</span>
+</div></div>
+
+<section id="about"><div class="wrap">
+<div class="rv"><div class="eyebrow">Professional profile</div><h2>About me</h2><p class="intro">A developer who understands both the technical side of an application and the business process it is designed to support.</p></div>
+<div class="about">
+<div class="card rv"><h3>Oracle development with an ERP mindset</h3><p>My experience is centered on Oracle-based textile ERP environments. I have worked with operational modules and the supporting database logic, forms and reports that help departments manage their day-to-day activities. I enjoy understanding a process, translating its requirements into application logic, and improving the way users work with business data.</p></div>
+<div class="card rv"><h3>How I approach development</h3><div class="pr"><div><b>Understand</b><span>Learn the business requirement first</span></div><div><b>Build</b><span>Develop clear forms and database logic</span></div><div><b>Validate</b><span>Test data flow and business rules</span></div><div><b>Support</b><span>Refine based on user feedback</span></div></div></div>
+</div></div></section>
+
+<section id="skills" style="background:var(--bg2);border-block:1px solid var(--line)"><div class="wrap">
+<div class="rv"><div class="eyebrow">Technical toolkit</div><h2>Skills &amp; technologies</h2><p class="intro">The Oracle platform, development tools and ERP concepts I use in my work.</p></div>
+<div class="skills">
+<div class="card rv"><h3>Oracle database</h3><div class="chips"><span>Oracle Database 12c</span><span>SQL</span><span>PL/SQL</span><span>Views</span><span>Stored Procedures</span><span>Functions</span><span>Triggers</span><span>Cursors</span><span>Subqueries</span></div></div>
+<div class="card rv"><h3>Forms &amp; reports</h3><div class="chips"><span>Oracle Forms 6i</span><span>Oracle Forms 12c</span><span>Oracle Reports</span><span>LOVs</span><span>Master–Detail Forms</span><span>Form Triggers</span><span>Report Parameters</span><span>Formula Columns</span></div></div>
+<div class="card rv"><h3>Development tools</h3><div class="chips"><span>TOAD</span><span>SQL Developer concepts</span><span>Oracle Forms Builder</span><span>Report Builder</span><span>Data Pump</span></div></div>
+<div class="card rv"><h3>ERP &amp; business processes</h3><div class="chips"><span>HRMS</span><span>Payroll</span><span>Inventory</span><span>Store</span><span>Production</span><span>Yarn</span><span>Accounts</span><span>Textile operations</span></div></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<div class="rv"><div class="eyebrow">Career journey</div><h2>Professional experience</h2><p class="intro">Building practical experience in Oracle development and textile ERP systems.</p></div>
+<div class="tl">
+<div class="card job rv"><div class="d">October 2026 – Present</div><div><h3>Software Developer</h3><div class="co">Magna Textile</div><p>Working in an Oracle 12c environment with Oracle Forms 6i and 12c. Involvement spans textile ERP areas including HRMS, Store, Accounts, Production and related business modules. Focus areas include application development, database logic, forms, reports and supporting operational workflows.</p></div></div>
+<div class="card job rv"><div class="d">Previous role</div><div><h3>Software Developer</h3><div class="co">AI Textiles · Textile ERP</div><p>Worked on textile ERP modules and operational applications, with experience across HRMS, Store and Production. Contributed to forms, reports, database development and workflows used by business teams.</p></div></div>
+</div></div></section>
+
+<section id="work" style="background:var(--bg2);border-block:1px solid var(--line)"><div class="wrap">
+<div class="rv"><div class="eyebrow">Domain experience</div><h2>Textile ERP modules</h2><p class="intro">Practical exposure to the workflows that connect people, materials, production and business operations.</p></div>
+<div class="mods">
+<div class="card rv"><div class="num">01</div><h3>HRMS &amp; Payroll</h3><p>Employee profiles, departments, sections, shifts, attendance, overtime, leaves, advances, loans, salary processing and HR reports.</p></div>
+<div class="card rv"><div class="num">02</div><h3>Store &amp; Inventory</h3><p>Store issuance and returns, order item transfer, demand closing, store departments, parties, measuring units and stock-related reports.</p></div>
+<div class="card rv"><div class="num">03</div><h3>Production</h3><p>Production planning and execution, processing contracts, fabric receiving, pre/post gate-pass activities and dispatch workflows.</p></div>
+<div class="card rv"><div class="num">04</div><h3>Yarn</h3><p>Yarn contracts, party setup, payment terms, delivery places, godowns and inward gate-pass processes.</p></div>
+<div class="card rv"><div class="num">05</div><h3>Accounts</h3><p>Exposure to Accounts ERP areas and business workflows within an integrated textile ERP environment.</p></div>
+<div class="card rv"><div class="num">06</div><h3>Textile operations</h3><p>Understanding how departments coordinate around material movement, production activity, employee data and operational reporting.</p></div>
+</div>
+<div class="card rv" style="margin-top:22px"><h3>Example: Store process flow</h3><p>A typical material movement workflow I have worked around in ERP applications:</p>
+<div class="flow"><div><small>01</small><b>Store Demand</b><span>Material requested</span></div><div><small>02</small><b>Purchase Order</b><span>Procurement process</span></div><div><small>03</small><b>IGP / GRN</b><span>Material received</span></div><div><small>04</small><b>Issue / Return</b><span>Stock movement recorded</span></div></div></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="rv"><div class="eyebrow">Development approach</div><h2>What I bring to a project</h2><p class="intro">A practical, process-aware approach to maintaining and developing business applications.</p></div>
+<div class="app">
+<div class="card rv"><div class="num">1</div><h3>Business process understanding</h3><p>Relating application requirements to real department workflows in textile operations.</p></div>
+<div class="card rv"><div class="num">2</div><h3>Database-driven thinking</h3><p>Using SQL and PL/SQL to retrieve, validate and process business information.</p></div>
+<div class="card rv"><div class="num">3</div><h3>Forms &amp; reporting</h3><p>Supporting users through data-entry forms, validations, LOVs and operational reports.</p></div>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap">
+<div class="cta rv"><div><div class="eyebrow">Get in touch</div><h2>Let’s build better business systems.</h2><p>I’m interested in connecting with Oracle professionals, software teams and organizations working with ERP and textile technology.</p><a class="em" href="mailto:abdullahwaseem375@gmail.com">abdullahwaseem375@gmail.com</a></div>
+<div class="actions" style="margin:0"><a class="btn pri" href="mailto:abdullahwaseem375@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/in/abdullah-waseem-riaz/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a></div></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Abdullah Waseem Riaz. All rights reserved.</span><span>Oracle Developer · Textile ERP Specialist · Pakistan</span></div></footer>
+<script>
+document.documentElement.classList.add("js");
+try{
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+}catch(e){document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")})}
+document.querySelectorAll(".card").forEach(function(c){c.addEventListener("pointermove",function(e){var r=c.getBoundingClientRect();c.style.setProperty("--mx",(e.clientX-r.left)+"px");c.style.setProperty("--my",(e.clientY-r.top)+"px")})});
+</script>
+</body>
+</html>
